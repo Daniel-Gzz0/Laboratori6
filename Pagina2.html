@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparaciones Especializadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .current {
+            font-weight: bold;
+            text-decoration: underline !important;
+        }
+        .content {
+            padding: 30px;
+        }
+        .img-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina1.html">Página 1</a></li>
+            <li><a href="pagina2.html" class="current">Página 2</a></li>
+            <li><a href="pagina3.html">Página 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="content container">
+        <h1 class="text-center mb-4">Reparaciones Especializadas</h1>
+        
+        <div class="row">
+            <div class="col-md-4 img-container">
+                <img src="./Reparacion.webp" class="card-img-top">
+            </div>
+            <div class="col-md-4 img-container">
+                <img src="./Reparacion2.jpeg" class="card-img-top">
+            </div>
+            <div class="col-md-4 img-container">
+                <img src="./Reparacion3.jpg" class="card-img-top">
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <p>Nuestro taller cuenta con especialistas en reparación de motores de todas las marcas. Desde ajustes menores hasta reconstrucciones completas, utilizamos piezas de calidad y herramientas especializadas para devolverle la vida a su motor.</p>
+            
+            <p>Los problemas eléctricos pueden ser difíciles de diagnosticar, pero nuestro equipo tiene la experiencia necesaria para resolver fallas en el sistema eléctrico, desde alternadores y baterías hasta complejos problemas en la computadora del vehículo.</p>
+            
+            <p>Ofrecemos servicios especializados en transmisiones automáticas y manuales. Ya sea un cambio de fluidos, ajuste de cables o reparación completa, garantizamos un trabajo de calidad con garantía escrita.</p>
+        </div>
+
+        <!-- Componentes de Bootstrap -->
+        <div class="alert alert-warning mt-4">
+            <strong>Atención:</strong> Reparaciones complejas requieren diagnóstico previo. Contamos con equipo especializado para una evaluación precisa.
+        </div>
+
+        <div class="accordion mt-4" id="reparacionesAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        ¿Cuánto tiempo toma una reparación?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#reparacionesAccordion">
+                    <div class="accordion-body">
+                        El tiempo varía según la complejidad. Reparaciones menores pueden tomar 1-2 días, mientras que reconstrucciones completas pueden requerir hasta 2 semanas. Siempre proporcionamos un estimado preciso después del diagnóstico.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
